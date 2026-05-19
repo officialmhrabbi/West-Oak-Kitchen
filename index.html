@@ -196,195 +196,74 @@
         <div class="menu-container">
 
             <div class="menu-header">
-                <div class="section-tag">
-                    <span class="tag-line"></span>
-                    <span class="tag-text">Our Menu</span>
-                </div>
-                <div class="menu-header-grid">
+                <div class="menu-header-left">
+                    <div class="section-tag">
+                        <span class="tag-line"></span>
+                        <span class="tag-text">Our Menu</span>
+                    </div>
                     <h2 class="menu-title">
-                        Crafted for<br>
-                        <em>Every Palate</em>
+                        Popular<br>
+                        <em>Picks</em>
                     </h2>
-                    <p class="menu-intro">
-                        Each dish is a reflection of season, soil, and skill —
-                        prepared fresh daily by our kitchen team.
-                    </p>
+                </div>
+                <div class="menu-header-right">
+                    <p class="menu-intro">A curated selection of guest favourites — each one a signature of the West Oak kitchen.</p>
+                    <a href="menu.html" class="btn-link">
+                        View Full Menu
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                            <path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
                 </div>
             </div>
 
-            <div class="menu-tabs" role="tablist">
-                <button class="tab active" data-tab="starters">Starters</button>
-                <button class="tab" data-tab="mains">Main Course</button>
-                <button class="tab" data-tab="desserts">Desserts</button>
-                <button class="tab" data-tab="drinks">Drinks</button>
-            </div>
+            <div class="dish-grid">
 
-            <!-- Starters -->
-            <div class="menu-panel active" id="starters">
-                <div class="menu-grid">
-                    <div class="menu-item">
-                        <div class="item-top">
-                            <h3 class="item-name">Truffle Arancini <span class="chef-pick">Chef's Pick</span></h3>
-                            <span class="item-price">$18</span>
-                        </div>
-                        <p class="item-desc">Crispy risotto balls with black truffle, parmesan foam and microgreens</p>
+                <div class="dish-card">
+                    <div class="dish-img">
+                        <img src="images/item1.jpg" alt="Truffle Arancini">
+                        <span class="dish-badge">Chef's Pick</span>
                     </div>
-                    <div class="menu-item">
-                        <div class="item-top">
-                            <h3 class="item-name">Seared Scallops</h3>
-                            <span class="item-price">$24</span>
+                    <div class="dish-info">
+                        <div class="dish-top">
+                            <span class="dish-cat">Starter</span>
+                            <span class="dish-price">$18</span>
                         </div>
-                        <p class="item-desc">Pan-seared diver scallops with cauliflower purée, caviar butter and dill oil</p>
-                    </div>
-                    <div class="menu-item">
-                        <div class="item-top">
-                            <h3 class="item-name">Heritage Charcuterie</h3>
-                            <span class="item-price">$28</span>
-                        </div>
-                        <p class="item-desc">House-cured meats, artisan cheese, seasonal preserve and toasted sourdough</p>
-                    </div>
-                    <div class="menu-item">
-                        <div class="item-top">
-                            <h3 class="item-name">Heirloom Tomato</h3>
-                            <span class="item-price">$16</span>
-                        </div>
-                        <p class="item-desc">Garden tomatoes with burrata, basil oil, sea salt and aged balsamic reduction</p>
-                    </div>
-                    <div class="menu-item">
-                        <div class="item-top">
-                            <h3 class="item-name">Smoked Salmon Crudo</h3>
-                            <span class="item-price">$22</span>
-                        </div>
-                        <p class="item-desc">Cold-smoked Atlantic salmon with crème fraîche, pickled shallots and capers</p>
-                    </div>
-                    <div class="menu-item">
-                        <div class="item-top">
-                            <h3 class="item-name">Wild Mushroom Velouté</h3>
-                            <span class="item-price">$15</span>
-                        </div>
-                        <p class="item-desc">Velvety forest mushroom soup, truffle cream, chive and toasted brioche croutons</p>
+                        <h3 class="dish-name">Truffle Arancini</h3>
+                        <p class="dish-desc">Crispy risotto balls with black truffle, parmesan foam and microgreens</p>
                     </div>
                 </div>
-            </div>
 
-            <!-- Mains -->
-            <div class="menu-panel" id="mains">
-                <div class="menu-grid">
-                    <div class="menu-item">
-                        <div class="item-top">
-                            <h3 class="item-name">Oak-Smoked Duck Breast <span class="chef-pick">Chef's Pick</span></h3>
-                            <span class="item-price">$42</span>
-                        </div>
-                        <p class="item-desc">Slow-smoked duck with cherry reduction, roasted root vegetables and rich jus</p>
+                <div class="dish-card">
+                    <div class="dish-img">
+                        <img src="images/item2.jpg" alt="Oak-Smoked Duck Breast">
+                        <span class="dish-badge">Most Ordered</span>
                     </div>
-                    <div class="menu-item">
-                        <div class="item-top">
-                            <h3 class="item-name">Pan-Seared Halibut</h3>
-                            <span class="item-price">$38</span>
+                    <div class="dish-info">
+                        <div class="dish-top">
+                            <span class="dish-cat">Main Course</span>
+                            <span class="dish-price">$42</span>
                         </div>
-                        <p class="item-desc">Wild Pacific halibut with saffron beurre blanc, fennel confit and sea herbs</p>
-                    </div>
-                    <div class="menu-item">
-                        <div class="item-top">
-                            <h3 class="item-name">Wagyu Short Rib</h3>
-                            <span class="item-price">$54</span>
-                        </div>
-                        <p class="item-desc">48-hour braised Wagyu with truffle potato purée, glazed carrot and red wine jus</p>
-                    </div>
-                    <div class="menu-item">
-                        <div class="item-top">
-                            <h3 class="item-name">Wild Mushroom Risotto</h3>
-                            <span class="item-price">$32</span>
-                        </div>
-                        <p class="item-desc">Seasonal forest mushrooms, aged parmesan, herb oil and crispy sage — vegetarian</p>
-                    </div>
-                    <div class="menu-item">
-                        <div class="item-top">
-                            <h3 class="item-name">Rack of Lamb</h3>
-                            <span class="item-price">$48</span>
-                        </div>
-                        <p class="item-desc">Herb-crusted French rack with ratatouille, pommes dauphinoise and rosemary jus</p>
-                    </div>
-                    <div class="menu-item">
-                        <div class="item-top">
-                            <h3 class="item-name">Lobster Linguine</h3>
-                            <span class="item-price">$44</span>
-                        </div>
-                        <p class="item-desc">Fresh hand-cut pasta with native lobster, cherry tomato, chilli and bisque butter</p>
+                        <h3 class="dish-name">Oak-Smoked Duck Breast</h3>
+                        <p class="dish-desc">Slow-smoked duck with cherry reduction, roasted root vegetables and rich jus</p>
                     </div>
                 </div>
-            </div>
 
-            <!-- Desserts -->
-            <div class="menu-panel" id="desserts">
-                <div class="menu-grid">
-                    <div class="menu-item">
-                        <div class="item-top">
-                            <h3 class="item-name">Dark Chocolate Fondant <span class="chef-pick">Chef's Pick</span></h3>
-                            <span class="item-price">$14</span>
-                        </div>
-                        <p class="item-desc">Warm Valrhona chocolate with salted caramel ice cream and cocoa tuile</p>
+                <div class="dish-card">
+                    <div class="dish-img">
+                        <img src="images/item3.jpg" alt="Dark Chocolate Fondant">
+                        <span class="dish-badge">Must Try</span>
                     </div>
-                    <div class="menu-item">
-                        <div class="item-top">
-                            <h3 class="item-name">Crème Brûlée Trio</h3>
-                            <span class="item-price">$16</span>
+                    <div class="dish-info">
+                        <div class="dish-top">
+                            <span class="dish-cat">Dessert</span>
+                            <span class="dish-price">$14</span>
                         </div>
-                        <p class="item-desc">Classic vanilla, lavender honey and espresso — served with fine butter biscuits</p>
-                    </div>
-                    <div class="menu-item">
-                        <div class="item-top">
-                            <h3 class="item-name">Seasonal Tart</h3>
-                            <span class="item-price">$13</span>
-                        </div>
-                        <p class="item-desc">Buttery shortcrust with pastry cream, fresh market fruit and elderflower glaze</p>
-                    </div>
-                    <div class="menu-item">
-                        <div class="item-top">
-                            <h3 class="item-name">Artisan Cheese Board</h3>
-                            <span class="item-price">$22</span>
-                        </div>
-                        <p class="item-desc">Five curated cheeses with honeycomb, fig jam, walnuts and sourdough crackers</p>
+                        <h3 class="dish-name">Dark Chocolate Fondant</h3>
+                        <p class="dish-desc">Warm Valrhona chocolate with salted caramel ice cream and cocoa tuile</p>
                     </div>
                 </div>
-            </div>
 
-            <!-- Drinks -->
-            <div class="menu-panel" id="drinks">
-                <div class="menu-grid">
-                    <div class="menu-item">
-                        <div class="item-top">
-                            <h3 class="item-name">West Oak Signature <span class="chef-pick">House Cocktail</span></h3>
-                            <span class="item-price">$18</span>
-                        </div>
-                        <p class="item-desc">Aged bourbon, smoked maple syrup, angostura bitters, charred orange peel</p>
-                    </div>
-                    <div class="menu-item">
-                        <div class="item-top">
-                            <h3 class="item-name">Garden Spritz</h3>
-                            <span class="item-price">$15</span>
-                        </div>
-                        <p class="item-desc">Elderflower liqueur, cucumber, fresh mint, prosecco and a hint of sea salt</p>
-                    </div>
-                    <div class="menu-item">
-                        <div class="item-top">
-                            <h3 class="item-name">Sommelier's Reserve</h3>
-                            <span class="item-price">from $16</span>
-                        </div>
-                        <p class="item-desc">Curated wine by the glass — ask your server for today's selection and pairing notes</p>
-                    </div>
-                    <div class="menu-item">
-                        <div class="item-top">
-                            <h3 class="item-name">Artisan Coffee</h3>
-                            <span class="item-price">$8</span>
-                        </div>
-                        <p class="item-desc">Single-origin pour over, cold brew or espresso — paired with a house petit four</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="menu-footer">
-                <a href="#reserve" class="btn-fill">Reserve Your Table</a>
             </div>
 
         </div>
