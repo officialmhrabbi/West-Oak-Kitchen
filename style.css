@@ -1953,6 +1953,168 @@ img { display: block; width: 100%; }
     .rating-item       { width: 100%; justify-content: center; }
 }
 
+
+/* ─── ABOUT PAGE ──────────────────────────────────────── */
+
+.about-page-hero {
+    background: #0a0806;
+    padding: calc(var(--nav-h) + 5rem) var(--pad) 5rem;
+    border-bottom: 1px solid rgba(201, 164, 97, 0.08);
+    position: relative;
+    overflow: hidden;
+}
+.about-page-hero::before {
+    content: 'About';
+    position: absolute;
+    top: -0.1em;
+    right: -0.04em;
+    font-family: var(--serif);
+    font-style: italic;
+    font-weight: 500;
+    font-size: clamp(10rem, 18vw, 22rem);
+    line-height: 1;
+    color: rgba(201, 164, 97, 0.03);
+    pointer-events: none;
+    user-select: none;
+}
+
+.about-page-hero-container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.abt-story-section {
+    background: #0f0c09;
+}
+
+/* ─── STATS BAR ───────────────────────────────────────── */
+
+.abt-stats-bar {
+    background: rgba(201, 164, 97, 0.04);
+    border-top: 1px solid rgba(201, 164, 97, 0.1);
+    border-bottom: 1px solid rgba(201, 164, 97, 0.1);
+    padding: 3rem var(--pad);
+}
+
+.abt-stats-inner {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+}
+
+.abt-stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0 clamp(2rem, 5vw, 5rem);
+}
+
+.abt-stat-num {
+    font-family: var(--serif);
+    font-size: clamp(1.6rem, 3vw, 2.4rem);
+    font-weight: 500;
+    color: var(--gold-light);
+    line-height: 1;
+    letter-spacing: -0.3px;
+}
+
+.abt-stat-label {
+    font-size: 0.68rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--text-muted);
+}
+
+.abt-stat-sep {
+    width: 1px;
+    height: 2.5rem;
+    background: rgba(201, 164, 97, 0.15);
+    flex-shrink: 0;
+}
+
+/* ─── CHEF SECTION ────────────────────────────────────── */
+
+.abt-chef {
+    position: relative;
+    background: #0a0806;
+    padding: 7rem 0 6rem;
+    overflow: hidden;
+    border-top: 1px solid rgba(201, 164, 97, 0.08);
+}
+
+.abt-chef-container {
+    position: relative;
+    z-index: 2;
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 var(--pad);
+}
+
+.abt-chef-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: clamp(3rem, 6vw, 6rem);
+    align-items: start;
+}
+
+.abt-chef-left .about-body {
+    margin-bottom: 0;
+}
+
+.chef-quote {
+    margin: 0;
+    padding: 2.5rem 0 2.5rem 2.5rem;
+    border-left: 2px solid rgba(201, 164, 97, 0.3);
+}
+
+.chef-quote p {
+    font-family: var(--serif);
+    font-size: clamp(1.05rem, 1.8vw, 1.35rem);
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.75;
+    color: rgba(245, 237, 224, 0.82);
+    margin-bottom: 2rem;
+}
+
+.chef-quote-sig {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.chef-name {
+    font-family: var(--serif);
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--gold-light);
+    letter-spacing: 0.2px;
+}
+
+.chef-title {
+    font-size: 0.72rem;
+    font-weight: 400;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    color: var(--text-muted);
+}
+
+/* ─── ABOUT PAGE RESPONSIVE ───────────────────────────── */
+
+@media (max-width: 900px) {
+    .abt-chef-grid    { grid-template-columns: 1fr; gap: 3rem; }
+    .chef-quote       { padding: 2rem 0 0 2rem; }
+    .abt-stats-inner  { flex-wrap: wrap; gap: 2rem; }
+    .abt-stat-sep     { display: none; }
+    .abt-stat         { padding: 0 1.5rem; }
+}
+
 @media (max-width: 900px) {
     .nav-links,
     .nav-reserve { display: none; }
